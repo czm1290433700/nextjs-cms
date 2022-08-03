@@ -1,1 +1,1 @@
-# A demo for 《深入浅出 SSR 官网开发指南》 - CMS
+# A demo for 《官网开发：SSR 应用实战指南》 - CMS

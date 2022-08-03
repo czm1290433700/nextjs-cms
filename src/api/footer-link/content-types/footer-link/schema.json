@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_links",
+  "info": {
+    "singularName": "footer-link",
+    "pluralName": "footer-links",
+    "displayName": "footerLink"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "footer_link_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::footer-link-list.footer-link-list",
+      "inversedBy": "footer_links"
+    }
+  }
+}

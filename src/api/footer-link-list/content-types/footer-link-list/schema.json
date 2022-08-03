@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_link_lists",
+  "info": {
+    "singularName": "footer-link-list",
+    "pluralName": "footer-link-lists",
+    "displayName": "footerLinkList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footer-link.footer-link",
+      "mappedBy": "footer_link_list"
+    },
+    "title": {
+      "type": "string"
+    },
+    "footer_datum": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::footer-data.footer-data",
+      "inversedBy": "footer_link_lists"
+    }
+  }
+}

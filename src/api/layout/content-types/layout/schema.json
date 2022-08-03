@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layouts",
+  "info": {
+    "singularName": "layout",
+    "pluralName": "layouts",
+    "displayName": "layout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footerData": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer-data.footer-data"
+    },
+    "navbarData": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navbar-data.navbar-data"
+    }
+  }
+}

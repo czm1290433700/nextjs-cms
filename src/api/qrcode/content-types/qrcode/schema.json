@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qrcodes",
+  "info": {
+    "singularName": "qrcode",
+    "pluralName": "qrcodes",
+    "displayName": "qrcode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
