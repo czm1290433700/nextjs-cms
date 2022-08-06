@@ -8,3 +8,10 @@
 账号：min
 邮箱：demo@qq.com
 密码：m123456M
+
+## 项目启动
+
+```
+npm install
+npm run dev
+```
