@@ -14,10 +14,6 @@ module.exports = createCoreController("api::layout.layout", ({ strapi }) => ({
       populate: "deep",
     };
     const { data } = await super.find(ctx);
-    return {
-      data: data?.map((item) => {
-        return removeAttrsAndId(removeTime(item));
-      }),
-    };
+    return removeAttrsAndId(removeTime(data[0]));
   },
 }));
