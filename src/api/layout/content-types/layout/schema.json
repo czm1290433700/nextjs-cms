@@ -4,22 +4,44 @@
   "info": {
     "singularName": "layout",
     "pluralName": "layouts",
-    "displayName": "layout"
+    "displayName": "layout",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "footerData": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::footer-data.footer-data"
+    "title": {
+      "type": "string"
     },
-    "navbarData": {
+    "qr_code": {
+      "type": "string"
+    },
+    "qr_code_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "copy_right": {
+      "type": "string"
+    },
+    "site_number": {
+      "type": "string"
+    },
+    "public_number": {
+      "type": "string"
+    },
+    "link_lists": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::navbar-data.navbar-data"
+      "relation": "oneToMany",
+      "target": "api::link-list.link-list"
     }
   }
 }

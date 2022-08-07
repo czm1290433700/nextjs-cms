@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "link_lists",
+  "info": {
+    "singularName": "link-list",
+    "pluralName": "link-lists",
+    "displayName": "LinkList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::link.link"
+    }
+  }
+}
