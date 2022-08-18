@@ -1,7 +1,6 @@
 # A demo for 《SSR 实战：官网开发指南》 - CMS
 
-掘金小册《SSR 实战：官网开发指南》实战篇数据层 CMS demo<br/>
-欢迎fork, 仓库仅供学习使用, 禁用于商用等获利用途
+掘金小册《SSR 实战：官网开发指南》实战篇数据层 CMS demo
 
 ## 登录
 
@@ -17,3 +16,5 @@ npm install
 npm run develop
 ```
 
+## 注意事项
+为方便还原课程配置内容，.tmp及.cache等数据缓存信息一并提交，正常项目使用可在 .gitignore 中忽略该两项的变更
