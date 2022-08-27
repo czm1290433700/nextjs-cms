@@ -11,6 +11,8 @@
 
 ## 项目启动
 
+node 版本 >= 16
+
 ```
 npm install
 npm run develop
