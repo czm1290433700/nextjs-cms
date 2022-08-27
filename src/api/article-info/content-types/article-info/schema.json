@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_infos",
+  "info": {
+    "singularName": "article-info",
+    "pluralName": "article-infos",
+    "displayName": "articleInfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createTime": {
+      "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
